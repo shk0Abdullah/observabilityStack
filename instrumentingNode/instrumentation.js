@@ -61,6 +61,8 @@ const sdk = new NodeSDK({
     getNodeAutoInstrumentations({
       // You can disable noisy instrumentations you don't need:
       "@opentelemetry/instrumentation-fs": { enabled: false },
+      "@opentelemetry/instrumentation-express": { enabled: false },
+
     }),
   ],
 });
